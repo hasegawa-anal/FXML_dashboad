@@ -17848,31 +17848,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
     font-family: "Yu Gothic", "Meiryo", sans-serif;
 }</style></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
-
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput  celltag_papermill-error-cell-tag" data-mime-type="text/markdown">
-<p><span style="color:red; font-family:Helvetica Neue, Helvetica, Arial, sans-serif; font-size:2em;">An Exception was encountered at '<a href="#papermill-error-cell">In [1]</a>'.</span></p>
-
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput  celltag_papermill-error-cell-tag" data-mime-type="text/markdown">
-<p><span id="papermill-error-cell" style="color:red; font-family:Helvetica Neue, Helvetica, Arial, sans-serif; font-size:2em;">Execution using papermill encountered an exception here and stopped:</span></p>
-
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
@@ -17906,8 +17882,9 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Now time: 2024-02-15 05:00:11.492556+09:00
-2024-02-15 05:00:11.492556+09:00 冬時間です。mt5とのずれ 4
+<pre>Now time: 2024-02-16 05:00:11.618083+09:00
+2024-02-16 05:00:11.618083+09:00 冬時間です。mt5とのずれ 4
+initialize() failed, error code = (-6, &#39;Terminal: Authorization failed&#39;)
 </pre>
 </div>
 </div>
@@ -17921,36 +17898,16 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
 <pre>
 <span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-intense-fg ansi-bold">KeyError</span>                                  Traceback (most recent call last)
+<span class="ansi-red-intense-fg ansi-bold">AttributeError</span>                            Traceback (most recent call last)
 Cell <span class="ansi-green-intense-fg ansi-bold">In[1], line 3</span>
 <span class="ansi-green-fg">      1</span> <span class="ansi-bold" style="color: rgb(0,135,0)">with</span> <span style="color: rgb(0,135,0)">open</span>(<span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">C:/Users/user/Desktop/yasapy/study/module_make/slack_dashboad/make_html_code.py</span><span style="color: rgb(175,0,0)">&#34;</span>, <span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">r</span><span style="color: rgb(175,0,0)">&#34;</span>, encoding<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">utf-8</span><span style="color: rgb(175,0,0)">&#34;</span>) <span class="ansi-bold" style="color: rgb(0,135,0)">as</span> f:
 <span class="ansi-green-fg">      2</span>     code <span style="color: rgb(98,98,98)">=</span> f<span style="color: rgb(98,98,98)">.</span>read()
 <span class="ansi-green-intense-fg ansi-bold">----&gt; 3</span>     <span class="ansi-yellow-bg">exec</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">code</span><span class="ansi-yellow-bg">)</span>
 <span class="ansi-green-fg">      5</span> <span style="color: rgb(0,135,0)">print</span>(<span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">== fin ==</span><span style="color: rgb(175,0,0)">&#34;</span>)
 
-File <span class="ansi-green-intense-fg ansi-bold">&lt;string&gt;:154</span>
+File <span class="ansi-green-intense-fg ansi-bold">&lt;string&gt;:73</span>
 
-File <span class="ansi-green-intense-fg ansi-bold">~\Desktop\yasapy\env\lib\site-packages\pandas\core\frame.py:3511</span>, in <span class="ansi-cyan-fg">DataFrame.__getitem__</span><span class="ansi-blue-intense-fg ansi-bold">(self, key)</span>
-<span class="ansi-green-fg">   3509</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> is_iterator(key):
-<span class="ansi-green-fg">   3510</span>         key <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">list</span>(key)
-<span class="ansi-green-intense-fg ansi-bold">-&gt; 3511</span>     indexer <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">columns</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">_get_indexer_strict</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">key</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">&#34;</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">columns</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">&#34;</span><span class="ansi-yellow-bg">)</span>[<span style="color: rgb(98,98,98)">1</span>]
-<span class="ansi-green-fg">   3513</span> <span style="color: rgb(95,135,135)"># take() does not accept boolean indexers</span>
-<span class="ansi-green-fg">   3514</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">getattr</span>(indexer, <span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">dtype</span><span style="color: rgb(175,0,0)">&#34;</span>, <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>) <span style="color: rgb(98,98,98)">==</span> <span style="color: rgb(0,135,0)">bool</span>:
-
-File <span class="ansi-green-intense-fg ansi-bold">~\Desktop\yasapy\env\lib\site-packages\pandas\core\indexes\base.py:5782</span>, in <span class="ansi-cyan-fg">Index._get_indexer_strict</span><span class="ansi-blue-intense-fg ansi-bold">(self, key, axis_name)</span>
-<span class="ansi-green-fg">   5779</span> <span class="ansi-bold" style="color: rgb(0,135,0)">else</span>:
-<span class="ansi-green-fg">   5780</span>     keyarr, indexer, new_indexer <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_reindex_non_unique(keyarr)
-<span class="ansi-green-intense-fg ansi-bold">-&gt; 5782</span> <span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">_raise_if_missing</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">keyarr</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">indexer</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">axis_name</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-fg">   5784</span> keyarr <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>take(indexer)
-<span class="ansi-green-fg">   5785</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">isinstance</span>(key, Index):
-<span class="ansi-green-fg">   5786</span>     <span style="color: rgb(95,135,135)"># GH 42790 - Preserve name from an Index</span>
-
-File <span class="ansi-green-intense-fg ansi-bold">~\Desktop\yasapy\env\lib\site-packages\pandas\core\indexes\base.py:5845</span>, in <span class="ansi-cyan-fg">Index._raise_if_missing</span><span class="ansi-blue-intense-fg ansi-bold">(self, key, indexer, axis_name)</span>
-<span class="ansi-green-fg">   5842</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> <span class="ansi-bold" style="color: rgb(215,95,95)">KeyError</span>(<span style="color: rgb(175,0,0)">f</span><span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">None of [</span><span class="ansi-bold" style="color: rgb(175,95,135)">{</span>key<span class="ansi-bold" style="color: rgb(175,95,135)">}</span><span style="color: rgb(175,0,0)">] are in the [</span><span class="ansi-bold" style="color: rgb(175,95,135)">{</span>axis_name<span class="ansi-bold" style="color: rgb(175,95,135)">}</span><span style="color: rgb(175,0,0)">]</span><span style="color: rgb(175,0,0)">&#34;</span>)
-<span class="ansi-green-fg">   5844</span> not_found <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">list</span>(ensure_index(key)[missing_mask<span style="color: rgb(98,98,98)">.</span>nonzero()[<span style="color: rgb(98,98,98)">0</span>]]<span style="color: rgb(98,98,98)">.</span>unique())
-<span class="ansi-green-intense-fg ansi-bold">-&gt; 5845</span> <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> <span class="ansi-bold" style="color: rgb(215,95,95)">KeyError</span>(<span style="color: rgb(175,0,0)">f</span><span style="color: rgb(175,0,0)">&#34;</span><span class="ansi-bold" style="color: rgb(175,95,135)">{</span>not_found<span class="ansi-bold" style="color: rgb(175,95,135)">}</span><span style="color: rgb(175,0,0)"> not in index</span><span style="color: rgb(175,0,0)">&#34;</span>)
-
-<span class="ansi-red-intense-fg ansi-bold">KeyError</span>: &#34;[&#39;profit&#39;] not in index&#34;</pre>
+<span class="ansi-red-intense-fg ansi-bold">AttributeError</span>: &#39;NoneType&#39; object has no attribute &#39;balance&#39;</pre>
 </div>
 </div>
 
