@@ -17882,7 +17882,9 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Unexpected exception formatting exception. Falling back to standard exception
+<pre>Now time: 2025-02-28 05:00:14.782494+09:00
+2025-02-28 05:00:14.782494+09:00 冬時間です。mt5とのずれ 4
+initialize() failed, error code = (-10003, &#34;IPC initialize failed, Pipe server didn&#39;t answer in 60 sec&#34;)
 </pre>
 </div>
 </div>
@@ -17894,66 +17896,18 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr">
-<pre>Traceback (most recent call last):
-  File &#34;C:\Users\user\Desktop\yasapy\env\lib\site-packages\IPython\core\interactiveshell.py&#34;, line 3526, in run_code
-    exec(code_obj, self.user_global_ns, self.user_ns)
-  File &#34;C:\Users\user\AppData\Local\Temp\ipykernel_9812\672229794.py&#34;, line 3, in &lt;module&gt;
-    exec(code)
-  File &#34;&lt;string&gt;&#34;, line 1, in &lt;module&gt;
-  File &#34;C:\Users\user\AppData\Local\Programs\Python\Python39\lib\tkinter\__init__.py&#34;, line 147, in &lt;module&gt;
-    class EventType(str, enum.Enum):
-  File &#34;C:\Users\user\AppData\Local\Programs\Python\Python39\lib\enum.py&#34;, line 310, in __new__
-    setattr(enum_class, member_name, enum_member)
-  File &#34;C:\Users\user\AppData\Local\Programs\Python\Python39\lib\enum.py&#34;, line 473, in __setattr__
-    super().__setattr__(name, value)
-MemoryError: Out of memory interning an attribute name
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
+<span class="ansi-red-intense-fg ansi-bold">AttributeError</span>                            Traceback (most recent call last)
+Cell <span class="ansi-green-intense-fg ansi-bold">In[1], line 3</span>
+<span class="ansi-green-fg">      1</span> <span class="ansi-bold" style="color: rgb(0,135,0)">with</span> <span style="color: rgb(0,135,0)">open</span>(<span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">C:/Users/user/Desktop/yasapy/study/module_make/slack_dashboad/make_html_code.py</span><span style="color: rgb(175,0,0)">&#34;</span>, <span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">r</span><span style="color: rgb(175,0,0)">&#34;</span>, encoding<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">utf-8</span><span style="color: rgb(175,0,0)">&#34;</span>) <span class="ansi-bold" style="color: rgb(0,135,0)">as</span> f:
+<span class="ansi-green-fg">      2</span>     code <span style="color: rgb(98,98,98)">=</span> f<span style="color: rgb(98,98,98)">.</span>read()
+<span class="ansi-green-intense-fg ansi-bold">----&gt; 3</span>     <span class="ansi-yellow-bg">exec</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">code</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-fg">      5</span> <span style="color: rgb(0,135,0)">print</span>(<span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">== fin ==</span><span style="color: rgb(175,0,0)">&#34;</span>)
 
-During handling of the above exception, another exception occurred:
+File <span class="ansi-green-intense-fg ansi-bold">&lt;string&gt;:73</span>
 
-Traceback (most recent call last):
-  File &#34;C:\Users\user\Desktop\yasapy\env\lib\site-packages\executing\executing.py&#34;, line 317, in executing
-    args = executing_cache[key]
-KeyError: (&lt;code object run_code at 0x0000021EE3D85EA0, file &#34;C:\Users\user\Desktop\yasapy\env\lib\site-packages\IPython\core\interactiveshell.py&#34;, line 3490&gt;, 2331694882464, 74)
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File &#34;C:\Users\user\Desktop\yasapy\env\lib\site-packages\IPython\core\interactiveshell.py&#34;, line 2120, in showtraceback
-    stb = self.InteractiveTB.structured_traceback(
-  File &#34;C:\Users\user\Desktop\yasapy\env\lib\site-packages\IPython\core\ultratb.py&#34;, line 1435, in structured_traceback
-    return FormattedTB.structured_traceback(
-  File &#34;C:\Users\user\Desktop\yasapy\env\lib\site-packages\IPython\core\ultratb.py&#34;, line 1326, in structured_traceback
-    return VerboseTB.structured_traceback(
-  File &#34;C:\Users\user\Desktop\yasapy\env\lib\site-packages\IPython\core\ultratb.py&#34;, line 1173, in structured_traceback
-    formatted_exception = self.format_exception_as_a_whole(etype, evalue, etb, number_of_lines_of_context,
-  File &#34;C:\Users\user\Desktop\yasapy\env\lib\site-packages\IPython\core\ultratb.py&#34;, line 1063, in format_exception_as_a_whole
-    self.get_records(etb, number_of_lines_of_context, tb_offset) if etb else []
-  File &#34;C:\Users\user\Desktop\yasapy\env\lib\site-packages\IPython\core\ultratb.py&#34;, line 1160, in get_records
-    res = list(stack_data.FrameInfo.stack_data(etb, options=options))[tb_offset:]
-  File &#34;C:\Users\user\Desktop\yasapy\env\lib\site-packages\stack_data\core.py&#34;, line 565, in stack_data
-    yield from collapse_repeated(
-  File &#34;C:\Users\user\Desktop\yasapy\env\lib\site-packages\stack_data\utils.py&#34;, line 84, in collapse_repeated
-    yield from map(mapper, original_group)
-  File &#34;C:\Users\user\Desktop\yasapy\env\lib\site-packages\stack_data\core.py&#34;, line 555, in mapper
-    return cls(f, options)
-  File &#34;C:\Users\user\Desktop\yasapy\env\lib\site-packages\stack_data\core.py&#34;, line 520, in __init__
-    self.executing = Source.executing(frame_or_tb)
-  File &#34;C:\Users\user\Desktop\yasapy\env\lib\site-packages\executing\executing.py&#34;, line 369, in executing
-    args = find(source=cls.for_frame(frame), retry_cache=True)
-  File &#34;C:\Users\user\Desktop\yasapy\env\lib\site-packages\executing\executing.py&#34;, line 252, in for_frame
-    return cls.for_filename(frame.f_code.co_filename, frame.f_globals or {}, use_cache)
-  File &#34;C:\Users\user\Desktop\yasapy\env\lib\site-packages\executing\executing.py&#34;, line 270, in for_filename
-    result = source_cache[filename] = cls._for_filename_and_lines(filename, lines)
-  File &#34;C:\Users\user\Desktop\yasapy\env\lib\site-packages\executing\executing.py&#34;, line 281, in _for_filename_and_lines
-    result = source_cache[(filename, lines)] = cls(filename, lines)
-  File &#34;C:\Users\user\Desktop\yasapy\env\lib\site-packages\stack_data\core.py&#34;, line 79, in __init__
-    super(Source, self).__init__(*args, **kwargs)
-  File &#34;C:\Users\user\Desktop\yasapy\env\lib\site-packages\executing\executing.py&#34;, line 228, in __init__
-    self.tree = ast.parse(ast_text, filename=filename)
-  File &#34;C:\Users\user\AppData\Local\Programs\Python\Python39\lib\ast.py&#34;, line 50, in parse
-    return compile(source, filename, mode, flags,
-MemoryError
-</pre>
+<span class="ansi-red-intense-fg ansi-bold">AttributeError</span>: &#39;NoneType&#39; object has no attribute &#39;balance&#39;</pre>
 </div>
 </div>
 
